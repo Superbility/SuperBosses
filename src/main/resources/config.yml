@@ -1,0 +1,74 @@
+BossFight:
+  Timeout: 1800 #30 mins
+  Locations:
+    BossSpawn: null
+    PlayerSpawn: null
+    PillarSpawns: []
+Messages:
+  PillarBreak:
+    - ""
+    - "&4PILLAR BREAK &8>> &cA pillar has been &4DESTROYED &cby &b{player}&c!"
+    - "&cThey have been granted a &bBeacon"
+    - ""
+  GameTimout:
+    - ""
+    - "&4&lARENA &8>> &cYou took too long to kill the boss!"
+    - ""
+  ShieldDestructionConvo:
+    - "{boss} &cWHAT?!"
+    - "{boss} &cYOU DESTROYED MY PILLARS?"
+    - "{boss} &cFINE, I WILL DEAL WITH YOU MYSELF"
+  NeedBaton:
+    - "&cYou need a &bBoss Baton &cto deal damage to the boss! Purchase one from the &dEssence Shop&c!"
+  GameStart:
+    - ""
+    - "&4&lARENA &8>> &cA warrior is rising! Do &6/warp arena &cto participate in the battle and win some rewards!"
+    - ""
+  Leaderboard:
+    - "&a&l---------------------------------------------"
+    - "&6&lBOSS DEFEATED"
+    - "&eReward Type &7- {reward_type}"
+    - ""
+    - "&c{player_final} &7dealt the final blow and gained 100 points!"
+    - ""
+    - "&e&l1st Damager &7- &6{player_damager_1} &7- &e{player_damage_1}"
+    - "&6&l2nd Damager &7- &6{player_damager_2} &7- &e{player_damage_2}"
+    - "&c&l3rd Damager &7- &6{player_damager_3} &7- &e{player_damage_3}"
+    - ""
+    - "&eYour Points: &a{target_damage} &7(Position #{target_position})"
+    - "&a&l---------------------------------------------"
+Items:
+  PillarPurger:
+    Material: BLAZE_ROD
+    Glow: true
+    Name: "&d&lPillar Purger"
+    Lore:
+      - "&7Use this item to instantly destroy"
+      - "&7a pillar!"
+  BossBaton:
+    Material: WOOD_SWORD
+    Glow: true
+    Name: "&b&lBoss Baton"
+    Lore:
+      - "&7Use this weapon to deal damage"
+      - "&7to a boss!"
+Rewards:
+  Global: #Rewards everyone gets
+    - "give {player} apple"
+  Commands:
+    Essence: "essence give {player} {amount}"
+    Coins: "eco give {player} {amount}"
+    XP: "xp add {player} {amount}"
+  Placement:
+    1:
+      Essence: 1000
+      Coins: 10000000
+      XP: 10000000
+    2:
+      Essence: 1000
+      Coins: 10000000
+      XP: 10000000
+    3:
+      Essence: 1000
+      Coins: 10000000
+      XP: 10000000

@@ -1,0 +1,15 @@
+name: SuperBosses
+version: ${project.version}
+main: me.superbility.superbosses.Main
+softdepend:
+  - PlaceholderAPI
+depend:
+  - HolographicDisplays
+  - WorldEdit
+commands:
+  superbosses:
+    description: Main command
+    usage: /<command>
+    permission: sbs.admin
+    aliases:
+      - sbs
